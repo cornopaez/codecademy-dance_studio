@@ -1,0 +1,36 @@
+/*Global
+--------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
+
+html {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+/*Navbar
+--------------------------------------*/
+
+nav {
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3.875rem;
+	padding-left: 3.6875rem;
+}
+
+nav .logo img {
+	height: 50px;
+}
+
+nav .nav-links ul li {
+	display: inline-block;
+	margin-right: 3.4375rem;
+}
+
+nav .nav-links ul li a {
+	color: #fff;
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 1rem;
+}
