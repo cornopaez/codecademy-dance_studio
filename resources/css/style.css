@@ -24,8 +24,13 @@ nav {
 	padding-left: 3.6875rem;
 }
 
-nav .logo img {
+nav .logo .desktop,
+nav .logo .mobile {
 	height: 50px;
+}
+
+nav .logo .mobile {
+	display: none;
 }
 
 nav .nav-links ul li {
@@ -38,6 +43,35 @@ nav .nav-links ul li a {
 	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+	nav {
+		padding: 0 0.625rem;
+		height: 2.5rem;
+	}
+
+	nav .logo {
+		height: 100%;
+	}
+
+	nav .logo .desktop {
+		display: none;
+	}
+
+	nav .logo .mobile {
+		display: initial;
+		height: 100%;
+	}
+
+	nav .nav-links ul li {
+		margin-right: 0.75rem;
+	}
+
+	nav .nav-links ul li a {
+		font-size: 0.75rem;
+	}
 }
 
 /*Jumbotron
@@ -84,6 +118,31 @@ nav .nav-links ul li a {
 	.jumbotron .container {
 		max-width: 31.25rem;
 	}	
+}
+
+@media only screen and (max-width: 576px) {
+	.jumbotron {
+		padding-top: 7.125rem;
+	}
+
+	.jumbotron .container {
+		max-width: 18.5rem;
+	}
+
+	.jumbotron .container h1 {
+		font-size: 1.875rem;
+		margin-bottom: 1.625rem;
+	}
+
+	.jumbotron .container p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 3.875rem;
+	}
+
+	.jumbotron .container a.btn {
+		font-size: 1rem;
+	}
 }
 
 /*Support
@@ -165,6 +224,27 @@ nav .nav-links ul li a {
 		font-size: 1rem;
 		line-height: 1.5;
 		margin-bottom: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.content {
+		padding: 1.875rem 1.25rem;
+	}
+
+	.content h2 {
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+
+	.content p {
+		font-size: 1rem;
+		line-height: 1.5;
+		margin-bottom: 1.25rem;
+	}
+
+	.content a {
+		font-size: 1rem;
 	}
 }
 
