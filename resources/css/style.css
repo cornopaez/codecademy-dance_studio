@@ -83,36 +83,56 @@ nav .nav-links ul li a {
 /*Support-1
 --------------------------------------*/
 
-.support-1 {
-	background: url("../images/graffiti-photo.png") no-repeat center;
+.support {
 	background-size: cover;
 	height: 31.25rem;
 	position: relative;
 }
 
-.support-1 .content {
-	height: 15rem;
-	width: 25rem;
+.support-1 {
+	background: url("../images/graffiti-photo.png") no-repeat center;
+}
+
+.support-2 {
+	background: url("../images/fire-photo.png") no-repeat center;
+}
+
+.support-3 {
+	background: url("../images/jump-photo.png") no-repeat center;
+}
+
+.support-1 .content,
+.support-3 .content {
 	background-color: rgba(120, 73, 225, 0.9);
+}
+
+.support-2 .content {
+	background-color: rgba(173, 74, 226, 0.9);
+}
+
+/*Content*/
+.content {
+	max-height: 20rem;
+	width: 25rem;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	padding: 5rem 3rem;
 }
 
-.support-1 .content h2 {
+.content h2 {
 	font-size: 2.25rem;
 	font-weight: bold;
 	line-height: 1.2;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.25rem;
 }
 
-.support-1 .content p {
+.content p {
 	font-size: 1.125rem;
 	line-height: 1.4;
-	margin-bottom: 1.2rem;
+	margin-bottom: 1.25rem;
 }
 
-.support-1 .content a {
+.content a {
 	font-weight: bold;
 }
