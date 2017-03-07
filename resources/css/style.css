@@ -80,6 +80,12 @@ nav .nav-links ul li a {
 	display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+	.jumbotron .container {
+		max-width: 31.25rem;
+	}	
+}
+
 /*Support
 --------------------------------------*/
 
@@ -140,6 +146,28 @@ nav .nav-links ul li a {
 	background-color: rgba(173, 74, 226, 0.9);
 }
 
+@media only screen and (max-width: 768px) {
+	/*Content*/
+	.content {
+		max-height: 12.1875rem;
+		width: initial;
+		bottom: 0;
+		padding: 1.875rem 3.4375rem 3.4375rem 1.875rem;
+	}
+
+	.content h2 {
+		font-size: 1.875rem;
+		line-height: 1.4;
+		margin-bottom: 0.625rem;
+	}
+
+	.content p {
+		font-size: 1rem;
+		line-height: 1.5;
+		margin-bottom: 1.25rem;
+	}
+}
+
 /*Footer
 --------------------------------------*/
 
@@ -184,7 +212,7 @@ footer .info .company-info ul li:last-child  {
 
 footer .info {
 	background-color: rgba(0,0,0,0.4);
-	height: 12rem;
+	height: 15rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -193,4 +221,48 @@ footer .info {
 
 footer .info .company-info {
 	margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+	footer {
+		font-size: 0.625rem;
+		letter-spacing: 0.5px;
+	}
+
+	/*Social Media*/
+	footer .social-media {
+		height: 2.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .social-media img {
+		display: none;
+	}
+
+	footer .social-media .icons {
+		width: 5.4375rem;
+		display: flex;
+		justify-content: space-between;
+		/*This needs to be revisited for proper icon size*/
+	}
+
+	footer .social-media ul {
+		display: none;
+	}
+
+	footer .info .company-info ul li:first-child,
+	footer .info .company-info ul li:nth-child(2) {
+		display: block;
+		border-right: none;
+		text-align: center;
+	}
+
+	/*Information*/
+
+	footer .info {
+		height: 8.75rem;
+	}
 }
