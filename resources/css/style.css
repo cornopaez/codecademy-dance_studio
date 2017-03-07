@@ -5,6 +5,7 @@
 html {
 	font-size: 16px;
 	font-family: "Roboto", sans-serif;
+	color: #fff;
 }
 
 /*Navbar
@@ -33,4 +34,43 @@ nav .nav-links ul li a {
 	font-family: "Open Sans";
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+/*Jumbotron
+--------------------------------------*/
+
+.jumbotron {
+	background: url("../images/dancers-photo.png") no-repeat center;
+	background-size: cover;
+	padding-top: 9.4375rem;
+	padding-bottom: 3.125rem;
+}
+
+.jumbotron .container {
+	max-width: 45rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.jumbotron .container h1 {
+	font-size: 3.125rem;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 2.6875rem;
+	text-transform: uppercase;
+}
+
+.jumbotron .container p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 5rem;
+}
+
+.jumbotron .container .btn {
+	border-radius: 2px;
+	background-color: #f5a623;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+	padding: 1.25rem 3.125rem;
 }
