@@ -45,6 +45,10 @@ nav .nav-links ul li a {
 	font-size: 1rem;
 }
 
+nav .nav-links ul li a.active {
+	color: #f5a623;
+}
+
 @media only screen and (max-width: 576px) {
 
 	nav {
@@ -73,6 +77,9 @@ nav .nav-links ul li a {
 		font-size: 0.75rem;
 	}
 }
+
+/*index.html
+----------------------------------------------------------*/
 
 /*Jumbotron
 --------------------------------------*/
@@ -346,3 +353,40 @@ footer .info .company-info {
 		height: 8.75rem;
 	}
 }
+
+/*about.html
+----------------------------------------------------------*/
+
+/*Banner
+--------------------------------------*/
+
+.banner {
+	display: flex;
+	align-items: center;
+	border-bottom: 10px solid #794ae2;
+}
+
+.banner img {
+	max-width: 50%;
+}
+
+.banner .about-content {
+	text-align: center;
+	width: 100%;
+	padding: 0 3rem;
+}
+
+.banner .about-content h1 {
+	text-transform: uppercase;
+	color: #794ae2;
+	font-weight: bold;
+	font-size: 3.125rem;
+}
+
+.banner .about-content p {
+	color: #666;
+}
+
+/*Support
+--------------------------------------*/
+
