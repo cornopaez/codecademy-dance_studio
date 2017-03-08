@@ -396,6 +396,45 @@ footer .info .company-info {
 	color: #666;
 }
 
+@media only screen and (max-width: 768px) {
+	.banner {
+		display: flex;
+		align-items: center;
+		border-bottom: 10px solid #794ae2;
+		flex-direction: column; 
+		background: url("../images/workout-photo.png") no-repeat;
+		background-size: cover;
+		height: 32rem;
+		position: relative;
+	}
+
+	.banner img {
+		display: none;
+	}
+
+	.banner .about-content {
+		text-align: center;
+		width: 100%;
+		padding: 0 3rem;
+		z-index: 2;
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.banner .about-content h1 {
+		text-transform: uppercase;
+		color: #794ae2;
+		font-weight: bold;
+		font-size: 1.25rem;
+	}
+
+	.banner .about-content p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+}
+
 /*Support
 --------------------------------------*/
 .about-support-1 {
@@ -412,7 +451,6 @@ footer .info .company-info {
 
 .about-support-1 img,
 .about-support-2 img {
-	
 	height: 9.375rem;
 	width: auto;
 }
@@ -446,4 +484,42 @@ footer .info .company-info {
 .about-support-map > .content {
 	background-color: rgba(120, 73, 225, 0.9);
 	max-height: initial;
+}
+
+@media only screen and (max-width: 768px) {
+	.about-support-1 {
+		flex-direction: column;
+	}
+
+	.about-support-2 {
+		flex-direction: column-reverse;
+	}
+
+	.about-support-1, 
+	.about-support-2 {
+		padding: 1.875rem 19%;
+	}
+
+	.about-support-1 img,
+	.about-support-2 img {
+		height: 6.25rem;
+	}
+
+	.about-support-1 img,
+	.about-support-2 > .about-support-content {
+		margin-right: 0;
+	}
+
+	.about-support-content h3 {
+		font-size: 1.75rem;
+	}
+
+	.about-support-content p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.about-support-map > .content {
+		width: initial;
+	}
 }
