@@ -533,3 +533,40 @@ footer .info .company-info {
 
 /*classes.html
 ----------------------------------------------------------*/
+
+/*Classes*/
+
+.classes {
+	display: inline-flex;
+	flex-flow: row wrap;
+	padding: 5.3125rem 0 1.275rem 1.125rem;
+	color: #000;
+	justify-content: center;
+}
+
+.classes.container {
+	width: 100%;
+}
+
+.classes > .class {
+	width: 25rem;
+	margin-right: 1.125rem;
+	margin-bottom: 1.125rem;
+}
+
+.classes > .class h3 {
+	font-size: 1.875rem;
+	font-weight: bold;
+	color: rgba(174,75,227, 0.9);
+	margin-top: 0;
+	margin-bottom: 1.125rem;
+}
+
+.classes > .class > .days {
+	font-weight: bold;
+}
+
+.classes > .class > .description {
+	font-size: 0.875rem;
+	line-height: 1.7;
+}
