@@ -435,6 +435,13 @@ footer .info .company-info {
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.banner {
+		background-size: 100%;
+		height: 28.5rem;
+	}
+}
+
 /*Support
 --------------------------------------*/
 .about-support-1 {
