@@ -165,14 +165,17 @@ nav .nav-links ul li a.active {
 /*Backgrounds*/
 .support-1 {
 	background: url("../images/graffiti-photo.png") no-repeat center;
+	background-size: cover;
 }
 
 .support-2 {
 	background: url("../images/fire-photo.png") no-repeat center;
+	background-size: cover;
 }
 
 .support-3 {
 	background: url("../images/jump-photo.png") no-repeat center;
+	background-size: cover;
 }
 
 /*Content*/
@@ -203,12 +206,12 @@ nav .nav-links ul li a.active {
 }
 
 /*Content Color*/
-.support-1 .content,
-.support-3 .content {
+.support-1 > .content,
+.support-3 > .content {
 	background-color: rgba(120, 73, 225, 0.9);
 }
 
-.support-2 .content {
+.support-2 > .content {
 	background-color: rgba(173, 74, 226, 0.9);
 }
 
@@ -389,4 +392,52 @@ footer .info .company-info {
 
 /*Support
 --------------------------------------*/
+.about-support-1 {
+	background-color: #f2f2f2;
+}
 
+.about-support-1, 
+.about-support-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 19%;
+}
+
+.about-support-1 img,
+.about-support-2 img {
+	
+	height: 9.375rem;
+	width: auto;
+}
+
+.about-support-1 img,
+.about-support-2 > .about-support-content {
+	margin-right: 5rem;
+}
+
+.about-support-content {
+	text-align: center;
+}
+
+.about-support-content h3 {
+	font-size: 2.25rem;
+	font-weight: bold;
+	color: #794ae2;
+}
+
+.about-support-content p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: #666;
+}
+
+.about-support-map {
+	background: url("../images/map.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.about-support-map > .content {
+	background-color: rgba(120, 73, 225, 0.9);
+	max-height: initial;
+}
