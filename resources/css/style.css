@@ -606,7 +606,7 @@ footer .info .company-info {
 	}
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 380px) {
 	.classes > .class {
 		width: 18.75rem;
 		margin-right: 2.5rem;
@@ -648,7 +648,6 @@ footer .info .company-info {
 	padding: 5.625rem 7.5rem 5rem 7.5rem;
 	justify-content: space-between;
 	color: #000;
-	/*max-width: 75rem;*/
 }
 
 .faculty-info > .person {
@@ -675,4 +674,31 @@ footer .info .company-info {
 
 .faculty-info > .person .faculty-about {
 	line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.banner.faculty > .about-content {
+		bottom: initial;
+		background-color: transparent;
+		width: 30rem;
+	}
+
+	.faculty-info {
+		padding: 5.625rem 5.5rem 5rem 5.5rem;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.banner.faculty > .about-content {
+		bottom: 0;
+		background-color: transparent;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.faculty-info {
+		padding: 5.625rem 0 5rem 0;
+		justify-content: center;
+	}
 }
