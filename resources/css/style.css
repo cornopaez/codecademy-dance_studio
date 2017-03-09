@@ -623,3 +623,21 @@ footer .info .company-info {
 		font-size: 1rem;
 	}
 }
+
+/*faculty.html
+----------------------------------------------------------*/
+
+/*Banner*/
+
+.banner.faculty {
+	background: url("../images/faculty-photo.png") no-repeat center;
+	background-size: cover;
+	height: 30.71875rem;
+	position: relative;
+}
+
+.banner.faculty > .about-content {
+	width: 44rem;
+	position: absolute;
+	right: 0;
+}
