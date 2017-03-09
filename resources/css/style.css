@@ -641,3 +641,38 @@ footer .info .company-info {
 	position: absolute;
 	right: 0;
 }
+
+.faculty-info {
+	display: inline-flex;
+	flex-flow: row wrap;
+	padding: 5.625rem 7.5rem 5rem 7.5rem;
+	justify-content: space-between;
+	color: #000;
+	/*max-width: 75rem;*/
+}
+
+.faculty-info > .person {
+	width: 16.875rem;
+	text-align: center;
+	margin-bottom: 6.25rem;
+}
+
+.faculty-info > .person img {
+	margin-bottom: 1.25rem;
+}
+
+.faculty-info > .person h3 {
+	font-size: 1.875rem;
+	font-weight: bold;
+	color: #8a54ff;
+}
+
+.faculty-info > .person .title {
+	padding-bottom: 0.625rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.faculty-info > .person .faculty-about {
+	line-height: 1.5;
+}
