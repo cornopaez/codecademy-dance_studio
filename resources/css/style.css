@@ -397,13 +397,13 @@ footer .info .company-info {
 }
 
 @media only screen and (max-width: 768px) {
-	.banner {
+	.banner.about-banner {
 		display: flex;
 		align-items: center;
 		border-bottom: 10px solid #794ae2;
 		flex-direction: column; 
 		background: url("../images/workout-photo.png") no-repeat;
-		background-size: cover;
+		background-size: 100%;
 		height: 32rem;
 		position: relative;
 	}
@@ -562,11 +562,64 @@ footer .info .company-info {
 	margin-bottom: 1.125rem;
 }
 
-.classes > .class > .days {
+.classes > .class > p > .days,
+.classes > .class > p > .hours {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.classes > .class > p > .days {
 	font-weight: bold;
 }
 
 .classes > .class > .description {
 	font-size: 0.875rem;
 	line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+	.banner.classes-banner {
+		display: flex;
+		align-items: center;
+		border-bottom: 10px solid #794ae2;
+		flex-direction: column; 
+		background: url("../images/classes-photo.png") no-repeat;
+		background-size: 100%;
+		height: 32rem;
+		position: relative;
+	}
+
+	.classes > .class {
+		width: 18.75rem;
+		margin-right: 2.25rem;
+		margin-bottom: 2.25rem;
+	}
+
+	.classes > .class > .description {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.classes > .class > p > .days,
+	.classes > .class > p > .hours {
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+	.classes > .class {
+		width: 18.75rem;
+		margin-right: 2.5rem;
+		margin-bottom: 2.5rem;
+	}	
+
+	.classes > .class > .description {
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+
+	.classes > .class > p > .days,
+	.classes > .class > p > .hours {
+		font-size: 1rem;
+	}
 }
